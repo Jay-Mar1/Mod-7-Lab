@@ -1,0 +1,24 @@
+import turtle
+
+def drawSquare(t, sz):
+    for i in range(4):
+        t.forward(sz)
+        t.left(90)
+
+wn = turtle.Screen()
+
+alex = turtle.Turtle()
+alex.color("blue")
+
+side = 10
+
+for i in range(5):
+    drawSquare(alex, side)
+    side = side + 20
+    alex.penup()
+    alex.goto(alex.xcor()-10, alex.ycor()-10)
+    alex.pendown()
+
+
+
+wn.exitonclick()
