@@ -1,0 +1,20 @@
+#Use the math module
+
+import math
+
+
+#Add your function
+
+def areaofcircle(r):
+    x = r * r * math.pi
+    return x
+
+#Ask user for their input
+
+r = int(input("Please enter the radius of your circle : "))
+
+result = areaofcircle(r)
+
+
+#Print statement
+print ("The area of a circle with a radius of", r," is", result)
