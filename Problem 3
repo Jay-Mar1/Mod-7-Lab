@@ -1,0 +1,8 @@
+def MultNumb(list1):
+  start = 1
+  for i in list1:
+      start *= i
+  return start
+
+
+print(MultNumb([5, 2, 7, -1]))
