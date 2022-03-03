@@ -1,0 +1,20 @@
+import turtle
+
+def drawPoly(t, sz):
+    for i in range(6):
+        t.forward(sz)
+        t.left(60)
+
+wn = turtle.Screen()
+
+alex = turtle.Turtle()
+alex.color("blue")
+
+for i in range(10):
+    drawPoly(alex, 60)
+    alex.left(35)
+    
+
+
+wn.exitonclick()
+
