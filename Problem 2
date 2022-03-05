@@ -1,0 +1,17 @@
+
+#Define the range
+
+def checkrange(n):
+    if n in range(1,10):
+        return("In the range")
+    else:
+        return("Outside the given range.")
+
+
+
+#Ask user for their input
+
+n = int(input("Please enter a number to check the range: "))
+
+print(checkrange(n))
+
